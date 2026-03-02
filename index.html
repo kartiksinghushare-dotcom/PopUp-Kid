@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  POP UP KIDS ENTERTAINMENT — Al Ain                              ║
+  ║  Version : 1.0.0                                                 ║
+  ║  Author  : [Your Name / Agency]                                  ║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  DEVELOPER NOTES                                                 ║
+  ║  1. Replace GA4_MEASUREMENT_ID with your real G-XXXXXXXX key    ║
+  ║  2. Update all [PLACEHOLDER] values in window.PU_CONFIG         ║
+  ║  3. Update <link rel="canonical"> to the live domain            ║
+  ║  4. Replace og:image URL with a real 1200×630 image             ║
+  ║  5. To add a new page: add tab-btn + bnav-btn + page div        ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en-AE" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ═══ SEO META ═══ -->
+  <title>Pop Up Kids Entertainment Al Ain | Indoor Play, Rides & Birthday Parties</title>
+  <meta name="description" content="Pop Up Kids Entertainment is Al Ain's ultimate indoor fun destination for kids & families. Soft play, rides, arcade games, birthday parties and more. Open 7 days a week!">
+  <meta name="keywords" content="Pop Up Kids Entertainment Al Ain, kids play area Al Ain, indoor entertainment Al Ain, birthday party Al Ain, soft play Al Ain, kids rides Al Ain, family fun Al Ain, children entertainment UAE">
+  <meta name="author"      content="Pop Up Kids Entertainment Al Ain">
+  <meta name="robots"      content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#fff7ed">
+
+  <!-- ═══ CANONICAL ═══ -->
+  <!-- <link rel="canonical" href=""> → Add your live domain here -->
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Pop Up Kids Entertainment Al Ain">
+  <meta property="og:url"         content=""><!-- ← Add your live domain -->
+  <meta property="og:title"       content="Pop Up Kids Entertainment – Al Ain's Ultimate Kids Fun Zone">
+  <meta property="og:description" content="Indoor play, rides, arcade, soft play & birthday parties in the heart of Al Ain. Fun for the whole family, 7 days a week!">
+  <meta property="og:image"       content=""><!-- ← Add a real 1200×630 image URL -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height"content="630">
+  <meta property="og:locale"      content="en_AE">
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:title"      content="Pop Up Kids Entertainment Al Ain">
+  <meta name="twitter:description"content="Al Ain's ultimate indoor kids fun zone — rides, arcade, soft play & birthday parties!">
+  <meta name="twitter:image"      content=""><!-- ← Add a real image URL -->
+
+  <!-- ═══ STRUCTURED DATA ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["AmusementPark","LocalBusiness"],
+    "@id": "https://[your-domain]/#business",
+    "name": "Pop Up Kids Entertainment",
+    "alternateName": "Pop Up Kids Al Ain",
+    "description": "Indoor kids entertainment centre in Al Ain featuring soft play, rides, arcade games and birthday party packages.",
+    "url": "https://[your-domain]/",
+    "telephone": "+971-XX-XXX-XXXX",
+    "email": "[your-email]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Mall / Street Name]",
+      "addressLocality": "Al Ain",
+      "addressRegion": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "10:00", "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday","Saturday"],
+        "opens": "10:00", "closes": "23:00"
+      }
+    ],
+    "priceRange": "$$",
+    "currenciesAccepted": "AED"
+  }
+  </script>
+
+  <!-- ═══ PERFORMANCE ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- ═══ FONTS ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- ═══ GA4 — Replace GA4_MEASUREMENT_ID ═══ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA4_MEASUREMENT_ID', {
+      send_page_view: true,
+      page_title: 'Pop Up Kids Entertainment – Home',
+      page_location: window.location.href
+    });
+  </script>
+
+  <style>
+  /* ══════════════════════════════════════════
+     DESIGN TOKENS
+  ══════════════════════════════════════════ */
+  :root {
+    --bg:         #fff7ed;
+    --bg2:        #fff1db;
+    --orange:     #FF6B35;
+    --yellow:     #FFD93D;
+    --green:      #6BCB77;
+    --blue:       #4D96FF;
+    --pink:       #FF6B9D;
+    --purple:     #C77DFF;
+    --dark:       #1a1a2e;
+    --text:       #2d2d2d;
+    --muted:      #888;
+    --card:       rgba(255,255,255,0.85);
+    --border:     rgba(0,0,0,0.07);
+    --shadow:     0 4px 24px rgba(0,0,0,0.08);
+    --shadow-lg:  0 12px 48px rgba(0,0,0,0.12);
+    --font-display: 'Fredoka One', cursive;
+    --font-body:    'Nunito', sans-serif;
+    --radius:     20px;
+    --radius-lg:  28px;
+    --radius-pill:50px;
+    --nav-h:      70px;
+    --bottom-h:   66px;
+    --max-w:      1120px;
+    --ease:       cubic-bezier(0.22,1,0.36,1);
+  }
+
+  /* ══════════════════════════════════════════
+     RESET
+  ══════════════════════════════════════════ */
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  img, video { max-width:100%; display:block; }
+  a { color:inherit; text-decoration:none; }
+  ul { list-style:none; }
+  button { font-family:var(--font-body); cursor:pointer; }
+  :focus-visible { outline:3px solid var(--orange); outline-offset:3px; border-radius:4px; }
+
+  /* ══════════════════════════════════════════
+     SKIP LINK
+  ══════════════════════════════════════════ */
+  .skip-link {
+    position:absolute; top:-100%; left:16px;
+    background:var(--orange); color:#fff; padding:8px 16px;
+    border-radius:0 0 8px 8px; font-weight:800; font-size:14px;
+    z-index:9999; transition:top 0.2s;
+  }
+  .skip-link:focus { top:0; }
+
+  /* ══════════════════════════════════════════
+     FLOATING BLOBS BACKGROUND
+  ══════════════════════════════════════════ */
+  .blob-bg {
+    position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;
+  }
+  .blob {
+    position:absolute; border-radius:50%;
+    filter:blur(80px); opacity:0.18; animation:blobFloat linear infinite;
+  }
+  .b1 { width:500px;height:500px;background:var(--orange);top:-100px;left:-100px;animation-duration:20s; }
+  .b2 { width:400px;height:400px;background:var(--blue);top:40%;right:-100px;animation-duration:25s;animation-delay:5s; }
+  .b3 { width:350px;height:350px;background:var(--green);bottom:-80px;left:30%;animation-duration:18s;animation-delay:10s; }
+  .b4 { width:300px;height:300px;background:var(--pink);top:20%;left:50%;animation-duration:22s;animation-delay:3s; }
+  @keyframes blobFloat {
+    0%,100% { transform:translate(0,0) scale(1); }
+    33%      { transform:translate(30px,-40px) scale(1.05); }
+    66%      { transform:translate(-20px,30px) scale(0.96); }
+  }
+
+  /* ══════════════════════════════════════════
+     TOP NAV
+  ══════════════════════════════════════════ */
+  .top-nav {
+    position:fixed; top:0; left:0; right:0; z-index:500;
+    height:var(--nav-h);
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 48px;
+    background:rgba(255,247,237,0.92);
+    backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+    border-bottom:2px solid rgba(255,107,53,0.12);
+    box-shadow: 0 2px 20px rgba(255,107,53,0.06);
+  }
+  .nav-brand {
+    display:flex; align-items:center; gap:12px; cursor:pointer;
+  }
+  .brand-icon {
+    width:44px; height:44px; border-radius:14px; flex-shrink:0;
+    background:linear-gradient(135deg,var(--orange),var(--yellow));
+    display:flex; align-items:center; justify-content:center;
+    font-size:22px; box-shadow:0 4px 16px rgba(255,107,53,0.35);
+  }
+  .brand-name {
+    font-family:var(--font-display); font-size:20px;
+    color:var(--orange); letter-spacing:0.5px; line-height:1;
+  }
+  .brand-sub {
+    font-size:9px; color:var(--muted); letter-spacing:2px;
+    text-transform:uppercase; margin-top:3px; font-weight:700;
+  }
+
+  /* Desktop tabs */
+  .desktop-tabs {
+    display:flex; gap:4px;
+    background:rgba(255,255,255,0.7); border:2px solid rgba(255,107,53,0.12);
+    border-radius:var(--radius-pill); padding:5px;
+    box-shadow:var(--shadow);
+  }
+  .tab-btn {
+    background:transparent; border:none;
+    color:var(--muted);
+    font-family:var(--font-body); font-weight:800; font-size:13px;
+    padding:9px 18px; border-radius:var(--radius-pill);
+    transition:all 0.22s var(--ease); white-space:nowrap; user-select:none;
+  }
+  .tab-btn:hover  { color:var(--orange); background:rgba(255,107,53,0.07); }
+  .tab-btn.active { background:linear-gradient(135deg,var(--orange),#ff8c42); color:#fff; box-shadow:0 4px 14px rgba(255,107,53,0.35); }
+
+  /* ══════════════════════════════════════════
+     BOTTOM NAV (mobile)
+  ══════════════════════════════════════════ */
+  .bottom-nav {
+    display:none; position:fixed; bottom:0; left:0; right:0; z-index:500;
+    height:var(--bottom-h);
+    background:rgba(255,247,237,0.97);
+    backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+    border-top:2px solid rgba(255,107,53,0.12);
+    box-shadow:0 -4px 20px rgba(0,0,0,0.06);
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .bottom-nav-inner { display:flex; height:100%; }
+  .bnav-btn {
+    flex:1; background:transparent; border:none;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px;
+    transition:all 0.2s var(--ease);
+  }
+  .bnav-btn .b-icon  { font-size:22px; line-height:1; transition:transform 0.2s var(--ease); }
+  .bnav-btn .b-label { font-size:10px; font-weight:800; color:var(--muted); transition:color 0.2s; }
+  .bnav-btn.active .b-icon  { transform:scale(1.2); }
+  .bnav-btn.active .b-label { color:var(--orange); }
+  .bnav-btn:active  { opacity:0.6; }
+
+  /* ══════════════════════════════════════════
+     PAGES
+  ══════════════════════════════════════════ */
+  .page { position:relative; z-index:1; display:none; min-height:100vh; animation:pageIn 0.35s var(--ease) both; }
+  .page.active { display:block; }
+  @keyframes pageIn { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+
+  /* ══════════════════════════════════════════
+     SHARED LAYOUT
+  ══════════════════════════════════════════ */
+  .container { max-width:var(--max-w); margin:0 auto; padding:76px 48px 64px; }
+  .pg-label {
+    display:inline-block; font-size:11px; font-weight:800; letter-spacing:3px;
+    text-transform:uppercase; color:var(--orange);
+    background:rgba(255,107,53,0.1); padding:5px 14px; border-radius:50px;
+    margin-bottom:16px;
+  }
+  .pg-title { font-family:var(--font-display); font-size:clamp(28px,5vw,52px); color:var(--dark); line-height:1.1; margin-bottom:14px; }
+  .pg-title span { color:var(--orange); }
+  .pg-desc { color:var(--muted); font-size:16px; line-height:1.7; max-width:540px; margin-bottom:48px; }
+
+  /* Buttons */
+  .btn-primary {
+    display:inline-block; border:none; cursor:pointer;
+    font-family:var(--font-body); font-weight:800; font-size:15px;
+    padding:14px 36px; border-radius:var(--radius-pill);
+    background:linear-gradient(135deg,var(--orange),#ff8c42); color:#fff;
+    box-shadow:0 6px 20px rgba(255,107,53,0.35);
+    transition:transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+    letter-spacing:0.3px;
+  }
+  .btn-primary:hover  { transform:translateY(-3px); box-shadow:0 10px 28px rgba(255,107,53,0.45); }
+  .btn-primary:active { transform:scale(0.97); }
+
+  .btn-outline {
+    display:inline-block; border:2.5px solid var(--orange); cursor:pointer;
+    font-family:var(--font-body); font-weight:800; font-size:15px;
+    padding:12px 34px; border-radius:var(--radius-pill);
+    color:var(--orange); background:transparent;
+    transition:all 0.2s var(--ease);
+  }
+  .btn-outline:hover { background:rgba(255,107,53,0.08); }
+
+  /* ══════════════════════════════════════════
+     HOME — HERO
+  ══════════════════════════════════════════ */
+  .hero {
+    min-height:100vh;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center;
+    padding:calc(var(--nav-h) + 40px) 24px 60px;
+    position:relative; overflow:hidden;
+  }
+  /* Decorative confetti dots */
+  .confetti-dot {
+    position:absolute; border-radius:50%; pointer-events:none;
+    animation:confettiFall linear infinite;
+  }
+  @keyframes confettiFall {
+    0%   { transform:translateY(-20px) rotate(0deg); opacity:0; }
+    10%  { opacity:1; }
+    90%  { opacity:0.6; }
+    100% { transform:translateY(100vh) rotate(720deg); opacity:0; }
+  }
+
+  .hero-badge {
+    display:inline-flex; align-items:center; gap:8px; margin-bottom:24px;
+    background:#fff; border:2px solid rgba(255,107,53,0.2);
+    color:var(--orange); font-size:12px; font-weight:800;
+    letter-spacing:2px; text-transform:uppercase;
+    padding:8px 20px; border-radius:var(--radius-pill);
+    box-shadow:0 4px 16px rgba(255,107,53,0.12);
+  }
+  .hero-title {
+    font-family:var(--font-display); font-size:clamp(44px,12vw,96px);
+    color:var(--dark); line-height:1; margin-bottom:8px;
+  }
+  .hero-title .pop   { color:var(--orange); }
+  .hero-title .up    { color:var(--blue); }
+  .hero-title .kids  { color:var(--green); }
+  .hero-tagline {
+    font-family:var(--font-display); font-size:clamp(16px,3.5vw,28px);
+    color:var(--muted); margin-bottom:20px;
+  }
+  .hero-desc {
+    font-size:16px; color:var(--muted); max-width:500px;
+    line-height:1.75; margin:0 auto 40px;
+  }
+  .hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+  /* Bouncing emoji row */
+  .emoji-row {
+    display:flex; gap:16px; justify-content:center; flex-wrap:wrap;
+    margin-top:48px; font-size:32px;
+  }
+  .emoji-row span {
+    display:inline-block;
+    animation:emojiPop 0.6s var(--ease) both, emojiBounce 2.5s ease-in-out infinite;
+  }
+  .emoji-row span:nth-child(1) { animation-delay:0.1s, 0s; }
+  .emoji-row span:nth-child(2) { animation-delay:0.2s, 0.3s; }
+  .emoji-row span:nth-child(3) { animation-delay:0.3s, 0.6s; }
+  .emoji-row span:nth-child(4) { animation-delay:0.4s, 0.9s; }
+  .emoji-row span:nth-child(5) { animation-delay:0.5s, 1.2s; }
+  .emoji-row span:nth-child(6) { animation-delay:0.6s, 1.5s; }
+  @keyframes emojiPop { from{opacity:0;transform:scale(0.3) rotate(-15deg)} to{opacity:1;transform:scale(1) rotate(0deg)} }
+  @keyframes emojiBounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+  /* Stats strip */
+  .stats-strip {
+    background:#fff; border-top:2px solid rgba(255,107,53,0.08);
+    border-bottom:2px solid rgba(255,107,53,0.08);
+    padding:36px 24px;
+    display:flex; justify-content:center; gap:clamp(28px,5vw,80px); flex-wrap:wrap;
+    box-shadow:0 4px 24px rgba(0,0,0,0.04);
+  }
+  .stat { text-align:center; }
+  .stat-n { font-family:var(--font-display); font-size:clamp(32px,6vw,48px); color:var(--orange); }
+  .stat-l { font-size:11px; font-weight:800; letter-spacing:2px; color:var(--muted); text-transform:uppercase; margin-top:4px; }
+
+  /* Highlights */
+  .highlights { padding:60px 24px; max-width:var(--max-w); margin:0 auto; }
+  .hl-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+  .hl-card {
+    background:var(--card); border:2px solid rgba(255,107,53,0.1);
+    border-radius:var(--radius-lg); padding:28px 24px;
+    display:flex; align-items:flex-start; gap:16px;
+    cursor:pointer; transition:all 0.25s var(--ease);
+    box-shadow:var(--shadow);
+  }
+  .hl-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:rgba(255,107,53,0.3); }
+  .hl-icon { font-size:32px; flex-shrink:0; }
+  .hl-card h3 { font-family:var(--font-display); font-size:16px; color:var(--dark); margin-bottom:7px; }
+  .hl-card p  { font-size:13px; color:var(--muted); line-height:1.55; }
+
+  /* ══════════════════════════════════════════
+     ATTRACTIONS
+  ══════════════════════════════════════════ */
+  .attr-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; }
+  .attr-card {
+    background:var(--card); border:2px solid var(--border);
+    border-radius:var(--radius-lg); padding:36px 28px;
+    box-shadow:var(--shadow); transition:all 0.28s var(--ease);
+    position:relative; overflow:hidden;
+  }
+  .attr-card::before {
+    content:''; position:absolute; top:-30px; right:-30px;
+    width:100px; height:100px; border-radius:50%; opacity:0.06;
+    transition:opacity 0.3s; pointer-events:none;
+  }
+  .attr-card:hover { transform:translateY(-7px); box-shadow:var(--shadow-lg); }
+  .attr-card:hover::before { opacity:0.12; }
+  .ac-orange::before { background:var(--orange); }
+  .ac-blue::before   { background:var(--blue); }
+  .ac-green::before  { background:var(--green); }
+  .ac-pink::before   { background:var(--pink); }
+  .ac-yellow::before { background:var(--yellow); }
+  .ac-purple::before { background:var(--purple); }
+  .a-icon  { font-size:48px; display:block; margin-bottom:18px; }
+  .a-title { font-family:var(--font-display); font-size:20px; color:var(--dark); margin-bottom:10px; }
+  .a-desc  { color:var(--muted); font-size:14px; line-height:1.65; margin-bottom:16px; }
+  .a-tag {
+    display:inline-block; padding:5px 14px; border-radius:var(--radius-pill);
+    font-size:11px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+  }
+  .to { background:rgba(255,107,53,0.1); color:var(--orange); }
+  .tb { background:rgba(77,150,255,0.1);  color:var(--blue); }
+  .tg { background:rgba(107,203,119,0.1); color:var(--green); }
+  .tp { background:rgba(255,107,157,0.1); color:var(--pink); }
+  .ty { background:rgba(255,217,61,0.18); color:#b88a00; }
+  .tpu{ background:rgba(199,125,255,0.1); color:var(--purple); }
+
+  /* ══════════════════════════════════════════
+     BIRTHDAY
+  ══════════════════════════════════════════ */
+  .bday-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start; }
+  .bday-vis {
+    background:linear-gradient(135deg,rgba(255,107,53,0.12),rgba(255,217,61,0.12));
+    border:2px solid rgba(255,107,53,0.2); border-radius:var(--radius-lg);
+    padding:48px 36px; text-align:center; position:relative;
+    box-shadow:var(--shadow);
+  }
+  .bday-em  { font-size:80px; display:block; margin-bottom:18px; }
+  .bday-vt  { font-family:var(--font-display); font-size:24px; color:var(--orange); margin-bottom:12px; }
+  .bday-vp  { color:var(--muted); font-size:14px; line-height:1.65; margin-bottom:24px; }
+  .bday-phone {
+    font-family:var(--font-display); font-size:22px; color:var(--orange);
+    text-decoration:none; display:block;
+  }
+  .bday-pill {
+    position:absolute; background:#fff; border:2px solid rgba(255,107,53,0.25);
+    border-radius:14px; padding:10px 18px; font-size:12px; font-weight:800;
+    color:var(--orange); white-space:nowrap; box-shadow:var(--shadow);
+    animation:floaty 3s ease-in-out infinite;
+  }
+  .p1 { top:-18px; right:-20px; } .p2 { bottom:24px; left:-28px; animation-delay:1.5s; }
+  @keyframes floaty { 0%,100%{transform:translateY(0) rotate(-2deg)} 50%{transform:translateY(-10px) rotate(2deg)} }
+  .feat-list { list-style:none; margin-bottom:36px; }
+  .feat-list li {
+    display:flex; gap:14px; align-items:flex-start;
+    padding:15px 0; border-bottom:2px solid rgba(0,0,0,0.05);
+    font-size:15px; color:var(--text); line-height:1.5;
+  }
+  .feat-list li:last-child { border-bottom:none; }
+  .fi { font-size:22px; flex-shrink:0; margin-top:1px; }
+
+  /* ══════════════════════════════════════════
+     VISIT (HOURS)
+  ══════════════════════════════════════════ */
+  .visit-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:48px; }
+  .hours-card {
+    background:var(--card); border:2px solid var(--border);
+    border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow);
+  }
+  .hours-head {
+    background:linear-gradient(90deg,rgba(255,107,53,0.1),rgba(255,217,61,0.1));
+    padding:24px 32px; border-bottom:2px solid rgba(0,0,0,0.05);
+    display:flex; align-items:center; gap:12px;
+  }
+  .hours-head h2 { font-family:var(--font-display); font-size:20px; color:var(--dark); }
+  .hr-row {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:14px 32px; border-bottom:1px solid rgba(0,0,0,0.04); gap:8px;
+    transition:background 0.2s;
+  }
+  .hr-row:last-child { border-bottom:none; }
+  .hr-row:hover { background:rgba(255,107,53,0.03); }
+  .hr-day   { font-weight:800; font-size:14px; color:var(--dark); min-width:110px; }
+  .hr-time  { font-family:var(--font-display); font-size:14px; color:var(--orange); }
+  .hr-badge {
+    font-size:9px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+    padding:4px 10px; border-radius:50px; background:rgba(107,203,119,0.15); color:var(--green);
+    white-space:nowrap;
+  }
+  .visit-info { display:flex; flex-direction:column; gap:14px; }
+  .vi-card {
+    background:var(--card); border:2px solid var(--border); border-radius:var(--radius);
+    padding:22px 24px; display:flex; gap:16px; align-items:flex-start;
+    box-shadow:var(--shadow); transition:all 0.2s var(--ease);
+  }
+  .vi-card:hover { border-color:rgba(255,107,53,0.25); transform:translateX(5px); }
+  .vi-ico {
+    width:46px; height:46px; border-radius:13px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center; font-size:20px;
+  }
+  .ioy { background:rgba(255,107,53,0.1); }
+  .iob { background:rgba(77,150,255,0.1); }
+  .iog { background:rgba(107,203,119,0.1); }
+  .vi-txt h3 { font-weight:800; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:var(--dark); margin-bottom:5px; }
+  .vi-txt p  { font-size:13px; color:var(--muted); line-height:1.55; }
+
+  /* ══════════════════════════════════════════
+     CONTACT
+  ══════════════════════════════════════════ */
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .contact-cards { display:flex; flex-direction:column; gap:14px; }
+  .cc-card {
+    background:var(--card); border:2px solid var(--border); border-radius:var(--radius);
+    padding:24px 28px; display:flex; gap:16px; align-items:flex-start;
+    text-decoration:none; color:inherit; box-shadow:var(--shadow); transition:all 0.22s var(--ease);
+  }
+  .cc-card:hover { border-color:rgba(255,107,53,0.3); transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+  .cc-ico { width:50px; height:50px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; }
+  .cc-txt h3 { font-family:var(--font-display); font-size:14px; color:var(--dark); margin-bottom:6px; }
+  .cc-txt p  { font-size:14px; color:var(--muted); line-height:1.6; }
+  .cc-txt strong { color:var(--orange); }
+  .cc-link { display:inline-flex; align-items:center; gap:5px; margin-top:7px; font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--orange); }
+  .cc-link:hover { text-decoration:underline; }
+  .social-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+  .s-btn {
+    display:flex; align-items:center; gap:8px; padding:11px 20px;
+    border-radius:var(--radius-pill); font-size:13px; font-weight:800;
+    text-decoration:none; border:2px solid; transition:all 0.2s var(--ease);
+  }
+  .s-inst { background:rgba(255,107,157,0.08); border-color:rgba(255,107,157,0.3); color:var(--pink); }
+  .s-inst:hover { background:rgba(255,107,157,0.18); }
+  .s-phon { background:rgba(255,107,53,0.08);  border-color:rgba(255,107,53,0.3);  color:var(--orange); }
+  .s-phon:hover { background:rgba(255,107,53,0.18); }
+  .s-mail { background:rgba(77,150,255,0.08);  border-color:rgba(77,150,255,0.25); color:var(--blue); }
+  .s-mail:hover { background:rgba(77,150,255,0.16); }
+  .map-box { border-radius:var(--radius-lg); overflow:hidden; border:2px solid var(--border); box-shadow:var(--shadow); }
+  .map-box iframe { width:100%; height:280px; border:none; display:block; }
+  .map-foot { background:#fff; border-top:2px solid rgba(0,0,0,0.05); padding:16px 20px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .map-foot p { font-size:12px; color:var(--muted); line-height:1.5; }
+  .map-foot a { font-size:12px; font-weight:800; color:var(--orange); text-decoration:none; white-space:nowrap; }
+  .map-foot a:hover { text-decoration:underline; }
+  .contact-form { background:var(--card); border:2px solid var(--border); border-radius:var(--radius-lg); padding:32px 28px; margin-top:18px; box-shadow:var(--shadow); }
+  .form-title { font-family:var(--font-display); font-size:20px; color:var(--dark); margin-bottom:5px; }
+  .form-sub   { color:var(--muted); font-size:13px; margin-bottom:22px; }
+  .form-row   { margin-bottom:14px; }
+  .form-row label { display:block; font-size:11px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:7px; }
+  .form-row input,
+  .form-row textarea,
+  .form-row select {
+    width:100%; background:#fff; border:2px solid rgba(0,0,0,0.1);
+    border-radius:12px; padding:12px 14px; color:var(--dark);
+    font-family:var(--font-body); font-size:14px; font-weight:600;
+    outline:none; transition:border-color 0.2s; -webkit-appearance:none;
+  }
+  .form-row input:focus,
+  .form-row textarea:focus,
+  .form-row select:focus { border-color:var(--orange); }
+  .form-row textarea { resize:vertical; min-height:90px; }
+  .form-row select option { background:#fff; }
+  .form-2col { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .submit-btn {
+    width:100%; padding:14px; border:none; border-radius:var(--radius-pill); cursor:pointer;
+    font-family:var(--font-body); font-weight:800; font-size:15px;
+    background:linear-gradient(135deg,var(--orange),#ff8c42); color:#fff;
+    box-shadow:0 6px 20px rgba(255,107,53,0.3);
+    transition:transform 0.2s var(--ease), box-shadow 0.2s; margin-top:4px;
+  }
+  .submit-btn:hover  { transform:translateY(-2px); box-shadow:0 10px 28px rgba(255,107,53,0.4); }
+  .submit-btn:active { transform:scale(0.98); }
+
+  /* ══════════════════════════════════════════
+     FOOTER
+  ══════════════════════════════════════════ */
+  .site-footer {
+    position:relative; z-index:1;
+    background:#fff; border-top:2px solid rgba(255,107,53,0.1);
+    padding:22px 48px; display:flex; justify-content:space-between;
+    align-items:center; font-size:12px; color:var(--muted); flex-wrap:wrap; gap:8px;
+  }
+  .site-footer a { color:var(--orange); font-weight:800; text-decoration:none; }
+  .site-footer a:hover { text-decoration:underline; }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — TABLET ≤ 960px
+  ══════════════════════════════════════════ */
+  @media (max-width:960px) {
+    .top-nav    { padding:0 24px; }
+    .container  { padding:64px 28px 52px; }
+    .bday-grid  { grid-template-columns:1fr; gap:40px; }
+    .bday-pill  { display:none; }
+    .visit-grid { grid-template-columns:1fr; gap:32px; }
+    .contact-grid { grid-template-columns:1fr; gap:32px; }
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — MOBILE ≤ 640px
+  ══════════════════════════════════════════ */
+  @media (max-width:640px) {
+    :root { --nav-h:60px; --bottom-h:62px; }
+    .desktop-tabs { display:none; }
+    .bottom-nav   { display:block; }
+    .page { padding-bottom:calc(var(--bottom-h) + 8px); }
+    .brand-name  { font-size:17px; }
+    .brand-sub   { display:none; }
+    .brand-icon  { width:38px; height:38px; font-size:19px; }
+    .container   { padding:52px 18px 40px; }
+    .highlights  { padding:40px 18px; }
+    .hero        { padding:calc(var(--nav-h) + 24px) 18px 40px; min-height:auto; }
+    .hero-desc   { font-size:14px; }
+    .hero-btns   { flex-direction:column; align-items:center; width:100%; }
+    .btn-primary,.btn-outline { width:100%; max-width:320px; text-align:center; }
+    .stats-strip { gap:20px; padding:24px 16px; }
+    .stat-n      { font-size:32px; }
+    .emoji-row   { font-size:26px; gap:10px; }
+    .hl-grid     { grid-template-columns:1fr 1fr; gap:12px; }
+    .hl-card     { padding:18px 14px; flex-direction:column; gap:10px; }
+    .hl-card p   { display:none; }
+    .hl-icon     { font-size:28px; }
+    .attr-grid   { grid-template-columns:1fr; gap:14px; }
+    .attr-card   { padding:26px 22px; }
+    .bday-grid   { grid-template-columns:1fr; gap:28px; }
+    .bday-vis    { padding:36px 24px; }
+    .visit-grid  { grid-template-columns:1fr; gap:24px; }
+    .hours-head  { padding:20px 22px; }
+    .hr-row      { padding:13px 22px; }
+    .hr-day      { font-size:13px; min-width:88px; }
+    .vi-card     { padding:18px 18px; gap:13px; }
+    .contact-grid{ grid-template-columns:1fr; gap:24px; }
+    .cc-card     { padding:20px 20px; gap:14px; }
+    .map-box iframe { height:220px; }
+    .contact-form{ padding:24px 18px; }
+    .form-2col   { grid-template-columns:1fr; gap:0; }
+    .site-footer { padding:16px 18px; flex-direction:column; align-items:flex-start; }
+  }
+
+  @media (max-width:380px) {
+    .hero-title  { font-size:38px; }
+    .hl-grid     { grid-template-columns:1fr; }
+    .hl-card p   { display:block; }
+  }
+
+  @media print {
+    .bottom-nav,.top-nav,.blob-bg { display:none !important; }
+    .page { display:block !important; }
+    body  { background:#fff !important; }
+  }
+
+  /* ─────────────────────────────────────────
+     PURE CSS TARGET NAVIGATION
+     No JavaScript needed — works everywhere
+  ───────────────────────────────────────── */
+  .page           { display: none !important; animation: none !important; }
+  #page-home      { display: block !important; }
+  .page:target    { display: block !important; animation: pgIn .35s var(--ease) both !important; }
+  #page-attractions:target ~ * #page-home,
+  #page-birthday:target ~ * #page-home,
+  #page-visit:target ~ * #page-home,
+  #page-contact:target ~ * #page-home { display: none !important; }
+
+  /* active state on targeted page nav links */
+  #page-attractions:target ~ * [href="#page-attractions"],
+  #page-birthday:target ~ * [href="#page-birthday"],
+  #page-visit:target ~ * [href="#page-visit"],
+  #page-contact:target ~ * [href="#page-contact"] {
+    background: linear-gradient(135deg,var(--orange),#ff8c42) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 14px rgba(255,107,53,.35) !important;
+  }
+
+  /* Fix anchor display for nav items */
+  a.tab-btn  { display: inline-flex !important; align-items: center; text-decoration: none; cursor: pointer; }
+  a.bnav-btn { display: flex !important; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; cursor: pointer; }
+  .hl-card-link { text-decoration: none; color: inherit; display: block; }
+  .hl-card-link .hl-card { cursor: pointer; }
+  a.btn-p, a.btn-o { display: inline-block; text-decoration: none; text-align: center; }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Background blobs -->
+  <div class="blob-bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+  </div>
+  <div id="confetti-wrap" aria-hidden="true"></div>
+
+  <!-- ═══ TOP NAV ═══ -->
+  <header role="banner">
+    <nav class="top-nav" role="navigation" aria-label="Main navigation">
+      <a class="nav-brand" href="#page-home" aria-label="Pop Up Kids Entertainment – Homepage">
+        <div class="brand-icon" aria-hidden="true">🎪</div>
+        <div>
+          <div class="brand-name">POP UP KIDS</div>
+          <div class="brand-sub">Entertainment · Al Ain</div>
+        </div>
+      </a>
+      <div class="desktop-tabs" role="tablist" aria-label="Site sections">
+        <a class="tab-btn active" href="#page-home" role="tab"  data-page="home"home')">🏠 Home</a>
+        <a class="tab-btn" href="#page-attractions" role="tab" data-page="attractions"attractions')">🎢 Attractions</a>
+        <a class="tab-btn" href="#page-birthday" role="tab" data-page="birthday"birthday')">🎂 Birthday</a>
+        <a class="tab-btn" href="#page-visit" role="tab" data-page="visit"visit')">🕐 Visit</a>
+        <a class="tab-btn" href="#page-contact" role="tab" data-page="contact"contact')">📞 Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- ════ HOME ════ -->
+    <div id="page-home" class="page active" role="tabpanel">
+      <section class="hero" aria-labelledby="hero-h1">
+        <div class="hero-content" style="position:relative;z-index:2;width:100%;">
+          <div class="hero-badge">🎉 Al Ain's Most Fun Kids Entertainment!</div>
+          <h1 class="hero-title" id="hero-h1">
+            <span class="pop">POP</span> <span class="up">UP</span><br>
+            <span class="kids">KIDS!</span>
+          </h1>
+          <p class="hero-tagline">Where Every Day is a Party 🥳</p>
+          <p class="hero-desc">Al Ain's ultimate indoor entertainment playground for kids and families. Rides, games, soft play, birthday parties and non-stop smiles!</p>
+          <div class="hero-btns">
+            <a class="btn-primary" href="#page-attractions" attractions')" data-ga-event="hero_cta" data-ga-label="explore_attractions">🎢 See Attractions</a>
+            <a class="btn-outline" href="#page-visit" visit')"       data-ga-event="hero_cta" data-ga-label="plan_visit">📍 Plan Your Visit</a>
+          </div>
+          <div class="emoji-row" aria-hidden="true">
+            <span>🎡</span><span>🎮</span><span>🧸</span><span>🎈</span><span>🏆</span><span>🎂</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="stats-strip" aria-label="Quick facts">
+        <div class="stat"><div class="stat-n">15+</div><div class="stat-l">Attractions</div></div>
+        <div class="stat"><div class="stat-n">7</div><div class="stat-l">Days a Week</div></div>
+        <div class="stat"><div class="stat-n">All</div><div class="stat-l">Ages Welcome</div></div>
+        <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Fun Guaranteed</div></div>
+      </div>
+
+      <section class="highlights" aria-labelledby="hl-heading">
+        <p class="pg-label">Discover</p>
+        <h2 id="hl-heading" style="font-family:var(--font-display);font-size:clamp(22px,4vw,36px);color:var(--dark);margin-bottom:40px;">
+          Everything at <span style="color:var(--orange);">Pop Up Kids!</span>
+        </h2>
+        <div class="hl-grid" role="list">
+          <a class="hl-card-link" href="#page-attractions"><div class="hl-card" role="listitem"attractions')"Enter')showPage('attractions')" data-ga-event="home_card_click" data-ga-label="attractions">
+            <span class="hl-icon">🎢</span><div><h3>Attractions</h3><p>Rides, arcade, soft play and more for kids of all ages!</p></div></a>
+          </div>
+          <a class="hl-card-link" href="#page-birthday"><div class="hl-card" role="listitem"birthday')"Enter')showPage('birthday')" data-ga-event="home_card_click" data-ga-label="birthday">
+            <span class="hl-icon">🎂</span><div><h3>Birthday Parties</h3><p>Make your child's birthday totally unforgettable!</p></div></a>
+          </div>
+          <a class="hl-card-link" href="#page-visit"><div class="hl-card" role="listitem"visit')"Enter')showPage('visit')" data-ga-event="home_card_click" data-ga-label="visit">
+            <span class="hl-icon">🕐</span><div><h3>Opening Hours</h3><p>Open daily with late nights on weekends — more fun!</p></div></a>
+          </div>
+          <a class="hl-card-link" href="#page-contact"><div class="hl-card" role="listitem"contact')"Enter')showPage('contact')" data-ga-event="home_card_click" data-ga-label="contact">
+            <span class="hl-icon">📞</span><div><h3>Contact Us</h3><p>Party bookings, questions? We're always here to help!</p></div></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ════ ATTRACTIONS ════ -->
+    <div id="page-attractions" class="page" role="tabpanel">
+      <div class="container">
+        <p class="pg-label">What's Inside</p>
+        <h1 class="pg-title">Fun for <span>Every Kid!</span></h1>
+        <p class="pg-desc">From thrilling rides to creative play zones — every corner of Pop Up Kids is designed to spark joy, laughter and adventure!</p>
+        <div class="attr-grid" role="list">
+          <article class="attr-card ac-orange" role="listitem">
+            <span class="a-icon">🎡</span>
+            <h2 class="a-title">Kids Rides</h2>
+            <p class="a-desc">Colourful, safe and exciting rides for little ones. Carousels, mini rollercoasters and spinning adventures that bring the biggest smiles!</p>
+            <span class="a-tag to">All Ages</span>
+          </article>
+          <article class="attr-card ac-blue" role="listitem">
+            <span class="a-icon">🎮</span>
+            <h2 class="a-title">Arcade Zone</h2>
+            <p class="a-desc">Classic and modern arcade games galore. Earn tickets, rack up high scores and trade in for incredible prizes at the redemption counter!</p>
+            <span class="a-tag tb">Ticket Games</span>
+          </article>
+          <article class="attr-card ac-green" role="listitem">
+            <span class="a-icon">🧸</span>
+            <h2 class="a-title">Soft Play Area</h2>
+            <p class="a-desc">A fully padded, supervised wonderland for toddlers and young kids to climb, bounce, slide and explore in total safety.</p>
+            <span class="a-tag tg">Toddler Safe</span>
+          </article>
+          <article class="attr-card ac-pink" role="listitem">
+            <span class="a-icon">🏎️</span>
+            <h2 class="a-title">Bumper Cars</h2>
+            <p class="a-desc">Everyone's favourite! Jump in, buckle up and bump your way to laughter in our fun-filled bumper car arena. Non-stop giggles guaranteed!</p>
+            <span class="a-tag tp">Family Fun</span>
+          </article>
+          <article class="attr-card ac-yellow" role="listitem">
+            <span class="a-icon">🏆</span>
+            <h2 class="a-title">Prize Redemption</h2>
+            <p class="a-desc">Win big, collect your tickets and head to our prize counter! Stuffed toys, gadgets, games — the more you play, the bigger the reward!</p>
+            <span class="a-tag ty">Win & Redeem</span>
+          </article>
+          <article class="attr-card ac-purple" role="listitem">
+            <span class="a-icon">🎯</span>
+            <h2 class="a-title">Skill Challenge Games</h2>
+            <p class="a-desc">Put your aim, speed and reflexes to the test with a wide range of skill-based games perfect for kids and competitive parents alike!</p>
+            <span class="a-tag tpu">Challenge Mode</span>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════ BIRTHDAY ════ -->
+    <div id="page-birthday" class="page" role="tabpanel">
+      <div class="container">
+        <div class="bday-grid">
+          <aside>
+            <div class="bday-vis">
+              <span class="bday-em">🎉</span>
+              <h2 class="bday-vt">Book the BEST Birthday Ever!</h2>
+              <p class="bday-vp">Call us or visit Pop Up Kids Entertainment in Al Ain — we'll make your child's birthday totally magical!</p>
+              <a href="tel:+971XXXXXXXXX" class="bday-phone" data-ga-event="phone_click" data-ga-label="birthday_card">+971 XX XXX XXXX</a>
+              <div class="bday-pill p1" aria-hidden="true">🎈 Packages Available!</div>
+              <div class="bday-pill p2" aria-hidden="true">🎊 Private Zones</div>
+            </div>
+          </aside>
+          <section>
+            <p class="pg-label">Special Celebrations</p>
+            <h1 class="pg-title">Birthdays that <span>Pop! 🎉</span></h1>
+            <p class="pg-desc" style="margin-bottom:28px;">Let us handle every single detail so you can sit back, relax and watch your child have the time of their life!</p>
+            <ul class="feat-list">
+              <li><span class="fi">🎈</span><div><strong>Private Party Zone</strong> — A dedicated, decorated space just for your celebration</div></li>
+              <li><span class="fi">🎮</span><div><strong>Unlimited Play Tokens</strong> — Every guest gets to play as much as they want</div></li>
+              <li><span class="fi">👑</span><div><strong>VIP Birthday Package</strong> — Crown, sash, banners and personalised décor</div></li>
+              <li><span class="fi">📸</span><div><strong>Photo Moments</strong> — Fun themed backdrops to capture every memory</div></li>
+              <li><span class="fi">🍰</span><div><strong>Flexible Packages</strong> — Tailored to your group size, age range and budget</div></li>
+              <li><span class="fi">🎁</span><div><strong>Goody Bags</strong> — Every little guest goes home with a smile and a gift</div></li>
+            </ul>
+            <a href="tel:+971XXXXXXXXX" class="btn-primary" data-ga-event="phone_click" data-ga-label="birthday_enquire">🎂 Enquire About Parties</a>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════ VISIT ════ -->
+    <div id="page-visit" class="page" role="tabpanel">
+      <div class="container">
+        <p class="pg-label">Plan Your Visit</p>
+        <h1 class="pg-title">Opening Hours <span>&amp; Location</span></h1>
+        <p class="pg-desc">We're open 7 days a week with extended fun hours on Fridays and Saturdays. Come play any time!</p>
+        <div class="visit-grid">
+          <section aria-labelledby="hours-h">
+            <div class="hours-card">
+              <div class="hours-head">
+                <span style="font-size:24px;" aria-hidden="true">🕐</span>
+                <h2 id="hours-h">Weekly Schedule</h2>
+              </div>
+              <div role="table" aria-label="Opening hours">
+                <div class="hr-row" role="row"><span class="hr-day" role="cell">Sunday</span>    <span class="hr-time" role="cell">10:00 AM – 10:00 PM</span></div>
+                <div class="hr-row" role="row"><span class="hr-day" role="cell">Monday</span>    <span class="hr-time" role="cell">10:00 AM – 10:00 PM</span></div>
+                <div class="hr-row" role="row"><span class="hr-day" role="cell">Tuesday</span>   <span class="hr-time" role="cell">10:00 AM – 10:00 PM</span></div>
+                <div class="hr-row" role="row"><span class="hr-day" role="cell">Wednesday</span> <span class="hr-time" role="cell">10:00 AM – 10:00 PM</span></div>
+                <div class="hr-row" role="row"><span class="hr-day" role="cell">Thursday</span>  <span class="hr-time" role="cell">10:00 AM – 10:00 PM</span></div>
+                <div class="hr-row" role="row">
+                  <span class="hr-day" role="cell">Friday</span>
+                  <span class="hr-time" role="cell">10:00 AM – 11:00 PM</span>
+                  <span class="hr-badge" role="cell">Late Night</span>
+                </div>
+                <div class="hr-row" role="row">
+                  <span class="hr-day" role="cell">Saturday</span>
+                  <span class="hr-time" role="cell">10:00 AM – 11:00 PM</span>
+                  <span class="hr-badge" role="cell">Late Night</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="visit-info">
+            <div class="vi-card"><div class="vi-ico ioy">📍</div><div class="vi-txt"><h3>Location</h3><p>[Mall / Area Name]<br>Al Ain, Abu Dhabi, UAE</p></div></div>
+            <div class="vi-card"><div class="vi-ico iob">🚗</div><div class="vi-txt"><h3>By Car</h3><p>Easily accessible from all areas of Al Ain. Ample free parking available on-site.</p></div></div>
+            <div class="vi-card"><div class="vi-ico iog">📞</div><div class="vi-txt"><h3>Call Us</h3><p>Have questions before you visit?<br><strong style="color:var(--orange);">+971 XX XXX XXXX</strong></p></div></div>
+            <div class="vi-card"><div class="vi-ico ioy">💰</div><div class="vi-txt"><h3>Entry & Tokens</h3><p>Pay-per-ride or token packages available. Ask about our family bundles and value deals!</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════ CONTACT ════ -->
+    <div id="page-contact" class="page" role="tabpanel">
+      <div class="container">
+        <p class="pg-label">Say Hello!</p>
+        <h1 class="pg-title">Contact <span>Pop Up Kids</span></h1>
+        <p class="pg-desc">Got a question, want to book a birthday party, or just need directions? We'd love to hear from you!</p>
+        <div class="contact-grid">
+          <section aria-label="Contact details">
+            <div class="contact-cards">
+              <a href="tel:+971XXXXXXXXX" class="cc-card" data-ga-event="phone_click" data-ga-label="contact_page">
+                <div class="cc-ico ioy">📞</div>
+                <div class="cc-txt"><h3>Phone</h3><p><strong>+971 XX XXX XXXX</strong></p><span class="cc-link">Call Now →</span></div>
+              </a>
+              <a href="/cdn-cgi/l/email-protection#29414c454546695946595c5942404d5a4845484047074a4644" class="cc-card" data-ga-event="email_click" data-ga-label="contact_page">
+                <div class="cc-ico iob">✉️</div>
+                <div class="cc-txt"><h3>Email</h3><p><strong><span class="__cf_email__" data-cfemail="dfb7bab3b3b09fafb0afaaafb4b6bbacbeb3beb6b1f1bcb0b2">[email&#160;protected]</span></strong></p><span class="cc-link">Send Email →</span></div>
+              </a>
+              <a href="https://maps.google.com/?q=Al+Ain+UAE" target="_blank" rel="noopener noreferrer" class="cc-card" data-ga-event="map_click" data-ga-label="contact_page">
+                <div class="cc-ico iog">📍</div>
+                <div class="cc-txt"><h3>Address</h3><p>[Mall / Street Name]<br>Al Ain, Abu Dhabi, UAE</p><span class="cc-link">Get Directions →</span></div>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="cc-card" data-ga-event="social_click" data-ga-label="instagram_contact">
+                <div class="cc-ico" style="background:rgba(255,107,157,0.1);">📸</div>
+                <div class="cc-txt"><h3>Instagram</h3><p><strong style="color:var(--pink);">@popupkids_alain</strong><br>Follow us for updates &amp; offers!</p><span class="cc-link" style="color:var(--pink);">Follow Us →</span></div>
+              </a>
+            </div>
+            <div class="social-row" aria-label="Quick links">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="s-btn s-inst" data-ga-event="social_click" data-ga-label="instagram_social">📸 Instagram</a>
+              <a href="tel:+971XXXXXXXXX" class="s-btn s-phon" data-ga-event="phone_click" data-ga-label="social_btn">📞 Call Us</a>
+              <a href="/cdn-cgi/l/email-protection#3c54595050537c4c534c494c5755584f5d505d5552125f5351" class="s-btn s-mail" data-ga-event="email_click" data-ga-label="social_btn">✉️ Email</a>
+            </div>
+          </section>
+
+          <section aria-label="Map and contact form">
+            <div class="map-box">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233756.90!2d55.65!3d24.22!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ab176af9e61c1%3A0x52b1ea38efcb1f9!2sAl%20Ain%20-%20Abu%20Dhabi%20-%20UAE!5e0!3m2!1sen!2sae!4v1614000000000!5m2!1sen!2sae"
+                loading="lazy" allowfullscreen
+                title="Pop Up Kids Entertainment location in Al Ain">
+              </iframe>
+              <div class="map-foot">
+                <p>Al Ain, Abu Dhabi, UAE<br><span style="font-size:11px;color:var(--orange);">📍 Exact location to be updated</span></p>
+                <a href="https://maps.google.com/?q=Al+Ain+UAE" target="_blank" rel="noopener noreferrer" data-ga-event="map_click" data-ga-label="map_footer">🧭 Open in Maps</a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h2 class="form-title">Send Us a Message 💌</h2>
+              <p class="form-sub">We'll get back to you as soon as possible!</p>
+              <form id="contact-form" novalidate onsubmit="handleFormSubmit(event)">
+                <div class="form-2col">
+                  <div class="form-row"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required></div>
+                  <div class="form-row"><label for="cf-phone">Phone</label><input type="tel" id="cf-phone" name="phone" placeholder="+971 50 000 0000" autocomplete="tel"></div>
+                </div>
+                <div class="form-row"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required></div>
+                <div class="form-row">
+                  <label for="cf-type">Enquiry Type</label>
+                  <select id="cf-type" name="enquiry_type">
+                    <option value="general">General Enquiry</option>
+                    <option value="birthday">Birthday Party Booking</option>
+                    <option value="group">Group Visit</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                </div>
+                <div class="form-row"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" placeholder="Tell us how we can help…" required></textarea></div>
+                <button type="submit" class="submit-btn" id="submit-btn">🎉 Send Message</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <span>© 2025 Pop Up Kids Entertainment — Al Ain. All Rights Reserved.</span>
+    <span>📍 Al Ain, UAE &nbsp;|&nbsp; <a href="tel:+971XXXXXXXXX" data-ga-event="phone_click" data-ga-label="footer">+971 XX XXX XXXX</a></span>
+  </footer>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="bottom-nav" role="navigation" aria-label="Mobile navigation">
+    <div class="bottom-nav-inner">
+      <a class="bnav-btn active" href="#page-home" role="tab"  data-page="home"home')"        aria-label="Home"><span class="b-icon">🏠</span><span class="b-label">Home</span></a>
+      <a class="bnav-btn" href="#page-attractions" role="tab" data-page="attractions"attractions')" aria-label="Attractions"><span class="b-icon">🎢</span><span class="b-label">Rides</span></a>
+      <a class="bnav-btn" href="#page-birthday" role="tab" data-page="birthday"birthday')"    aria-label="Birthday Parties"><span class="b-icon">🎂</span><span class="b-label">Birthday</span></a>
+      <a class="bnav-btn" href="#page-visit" role="tab" data-page="visit"visit')"       aria-label="Hours and Visit"><span class="b-icon">🕐</span><span class="b-label">Hours</span></a>
+      <a class="bnav-btn" href="#page-contact" role="tab" data-page="contact"contact')"     aria-label="Contact Us"><span class="b-icon">📞</span><span class="b-label">Contact</span></a>
+    </div>
+  </nav>
+
+  <style>.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
+
+  <!-- SITE CONFIG — update placeholders here -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    window.PU_CONFIG = {
+      ga4Id:     'GA4_MEASUREMENT_ID',      // ← Replace
+      siteName:  'Pop Up Kids Entertainment Al Ain',
+      phone:     '+971XXXXXXXXX',           // ← Replace
+      phoneHref: 'tel:+971XXXXXXXXX',       // ← Replace
+      email:     '[your-email]',            // ← Replace
+      instagram: 'https://www.instagram.com/popupkids_alain/', // ← Replace
+      address:   '[Mall Name], Al Ain, UAE',// ← Replace
+      mapUrl:    'https://maps.google.com/?q=Al+Ain+UAE', // ← Replace with exact location
+      version:   '1.0.0'
+    };
+  </script>
+
+  <script>
+  /* ── GA4 SAFE WRAPPER ── */
+  function gaEvent(name, params) {
+    try { if (typeof gtag === 'function') gtag('event', name, params); } catch(e) {}
+  }
+
+  /* ── PAGE SWITCHING ── */
+  var _page = 'home';
+  var _pageTitles = { home:'Home', attractions:'Attractions', birthday:'Birthday Parties', visit:'Visit & Hours', contact:'Contact' };
+
+  function showPage(id) {
+    if (id === _page) return;
+    _page = id;
+    document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn,.bnav-btn').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+    var pg  = document.getElementById('page-' + id);
+    if (pg) pg.classList.add('active');
+    document.querySelectorAll('[data-page="' + id + '"]').forEach(function(b){ b.classList.add('active'); b.setAttribute('aria-selected','true'); });
+    window.scrollTo({ top:0, behavior:'smooth' });
+    gaEvent('page_view', { page_title: PU_CONFIG.siteName + ' – ' + (_pageTitles[id]||id), page_location: window.location.href+'#'+id, page_path:'#'+id });
+    gaEvent('tab_click', { tab_name: id, tab_title: _pageTitles[id]||id });
+  }
+
+  /* ── FORM SUBMIT ── */
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    var type = document.getElementById('cf-type') ? document.getElementById('cf-type').value : 'unknown';
+    gaEvent('form_submit', { form_name:'contact_form', enquiry_type:type, page_section:'contact' });
+    var btn = document.getElementById('submit-btn');
+    btn.textContent = '✅ Message Sent!';
+    btn.style.background = 'linear-gradient(135deg,#6BCB77,#4CAF50)';
+    btn.disabled = true;
+    e.target.reset();
+    setTimeout(function(){ btn.textContent='🎉 Send Message'; btn.style.background=''; btn.disabled=false; }, 3000);
+  }
+
+  /* ── DELEGATE CLICK TRACKING ── */
+  document.addEventListener('click', function(e) {
+    var el = e.target.closest('[data-ga-event]');
+    if (!el) return;
+    gaEvent(el.dataset.gaEvent, { event_label: el.dataset.gaLabel||'', link_text: el.textContent.trim().slice(0,60) });
+    var link = e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (href.startsWith('tel:'))    gaEvent('phone_click',  { phone_number: href.replace('tel:','') });
+    if (href.startsWith('mailto:')) gaEvent('email_click',  { email_address: href.replace('mailto:','') });
+    if (href.startsWith('http') && !href.includes(location.hostname)) gaEvent('outbound_link', { link_url: href });
+  });
+
+  /* ── SCROLL DEPTH ── */
+  (function(){
+    var fired={};
+    window.addEventListener('scroll', function(){
+      var pct = Math.round(((window.scrollY+window.innerHeight)/document.documentElement.scrollHeight)*100);
+      [25,50,75,90].forEach(function(t){ if(pct>=t && !fired[t]){ fired[t]=true; gaEvent('scroll',{percent_scrolled:t,page_section:_page}); } });
+    }, { passive:true });
+  })();
+
+  /* ── TIME ON PAGE ── */
+  (function(){
+    var t0 = Date.now();
+    function send(){ var s=Math.round((Date.now()-t0)/1000); if(s>2) gaEvent('time_on_page',{seconds:s,page_section:_page}); }
+    window.addEventListener('beforeunload', send);
+    document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='hidden') send(); else t0=Date.now(); });
+  })();
+
+  /* ── KEYBOARD NAV ── */
+  (function(){
+    var pages=['home','attractions','birthday','visit','contact'];
+    document.querySelector('.desktop-tabs') && document.querySelector('.desktop-tabs').addEventListener('keydown', function(e){
+      var i=pages.indexOf(_page), n=i;
+      if(e.key==='ArrowRight') n=Math.min(i+1,pages.length-1);
+      if(e.key==='ArrowLeft')  n=Math.max(i-1,0);
+      if(e.key==='Home') n=0; if(e.key==='End') n=pages.length-1;
+      if(n!==i){ e.preventDefault(); showPage(pages[n]); var b=document.querySelector('[data-page="'+pages[n]+'"].tab-btn'); if(b)b.focus(); }
+    });
+  })();
+
+  /* ── CONFETTI DOTS ── */
+  (function(){
+    var wrap = document.getElementById('confetti-wrap');
+    var colors = ['#FF6B35','#FFD93D','#6BCB77','#4D96FF','#FF6B9D','#C77DFF'];
+    for(var i=0;i<18;i++){
+      var d = document.createElement('div');
+      d.className = 'confetti-dot';
+      var s = Math.random()*8+4;
+      d.style.cssText = 'width:'+s+'px;height:'+s+'px;background:'+colors[i%6]+';' +
+        
